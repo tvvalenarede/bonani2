@@ -1,376 +1,901 @@
 
+
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-	<meta charset="UTF-8">
-	<title>Maicon Paulista | Atacante Profissional</title>
-	<meta name="keywords" content="Maicon Paulista, Jogador de Futebol, Lateral Esquerdo, Futebol Brasileiro, Jogador Profissional" />
-	<meta name="description" content="Site oficial do jogador Maycon Paulista, atacante profissional de 29 anos com carreira no futebol brasileiro buscando oportunidades no exterior" />	
-	<meta name="author" content="Ellos design - Criação de Sites"/>
-	<meta name="reply-to" content="contato@mayconpaulista.com"/>
-	<meta http-equiv="cache-control" content="public"/> 
-	<meta http-equiv="Pragma" content="public"/>  
-	<meta name="language" content="pt-br"/>
-	<meta name="owner" content="Ellos Design"/>
-	<meta name="Audience" content="ALL"/>
-	<meta name="rating" content="general"/>
-	<meta name="GOOGLEBOT" content="index,follow"/>
-	<meta name="MSNBot" content="index,follow"/>
-	<meta name="InktomiSlurp" content="index,follow"/>
-	<meta name="Unknownrobot" content="index,follow"/>
-	<meta name="Robots" content="index,follow"/>
-	<meta property="og:image" content="https://www.maiconpaulista.com/logo.png"/>
-	<meta name="revisit-after" content="1day"/>
-	<meta property="og:url" content="https://www.mayconpaulista.com/" />
-	<meta property="og:title" content="Maicon Paulista | Atacante Profissional" />
-	<meta property="og:description" content="Site oficial do atacante Maicon Paulista, jogador profissional de 29 anos buscando oportunidades no exterior" />
-	<meta property="og:image" content="https://www.mayconpaulista.com/logo.png" />
-	<meta name="theme-color" content="#0A357D" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://www.procurandocraques.com/app/assets/css/style.min.css?v=4">
-	<link rel="shortcut icon" href="https://www.procurandocraques.com/favicon.ico"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfumaria da Rita | Perfumes Franceses de Luxo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary: #8a6d62;
+            --secondary: #d4c1b0;
+            --accent: #c69f89;
+            --dark: #4a3f35;
+            --light: #f8f4f0;
+            --text: #333333;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--text);
+            overflow-x: hidden;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(74, 63, 53, 0.7), rgba(74, 63, 53, 0.9)), url('https://images.unsplash.com/photo-1490730141103-6cac27aaab94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: 300;
+            letter-spacing: 5px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo i {
+            margin-right: 10px;
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .cart-icon {
+            font-size: 1.3rem;
+            color: var(--dark);
+            position: relative;
+            cursor: pointer;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background-color: var(--accent);
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--dark);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+
+        /* Products Section */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-img {
+            height: 280px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-name {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+
+        .product-brand {
+            font-size: 0.9rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .product-actions {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--dark);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        /* Gallery Section */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            height: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(138, 109, 98, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay i {
+            color: white;
+            font-size: 2rem;
+        }
+
+        /* Forms */
+        .form-container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--dark);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .form-row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .contact-card i {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+
+        .contact-card h3 {
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .contact-card p {
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 50px 20px 20px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .footer-column h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--accent);
+        }
+
+        .footer-column p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: var(--secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        .social-icons a:hover {
+            background-color: var(--accent);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: var(--secondary);
+        }
+
+        /* Responsive Design */
+        .menu-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--dark);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .menu-toggle {
+                display: block;
+            }
+            
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                transition: clip-path 0.4s ease;
+            }
+            
+            .nav-links.active {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+            
+            .nav-links li {
+                margin: 15px 0;
+            }
+            
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+    </style>
 </head>
-
-<body class="home">
-<div class="wrapper">
-	
-	<header class="header">
-	<div class="container">
-		<span class="menu-btn-mobile" id="menu-btn-mobile"></span>
-		<a href="#" title="Maicon Paulista | Lateral Esquerdo" alt="Maicon Paulista" class="header-logo colored-logo"><img src="https://www.procurandocraques.com/peneira-de-futebol.png" alt="Jogador Brilhante"></a>
-		<a href="#" title="Maicon Paulista | Lateral Esquerdo" class="header-logo white-logo"><img src="https://www.procurandocraques.com/uploads/img/loja_logo/26/87adf0d289b2ebb0047d5b338e3b271b.png" alt="Jogador Brilhante"></a>
-
-		<div class="header-direita">
-			<div class="header-botoes">	
-				<a href="https://wa.me/5512997690407" class="btn btn-sm2 btn-primario"><i class="fab fa-whatsapp"></i> Contato</a>
-			</div>
-
-			<nav class="fdx-menu lateral">
-				<div class="container">
-					<ul class="fdx-menu-1-level">
-						<li><a href="#sobre">Sobre</a></li>	
-						<li><a href="#carreira">Carreira</a></li>	
-						<li><a href="#videos">Vídeos</a></li>	
-						<li><a href="#estatisticas">Estatísticas</a></li>
-						<li><a href="#contato">Contato</a></li>			
-					</ul>
-				</div>		
-			</nav>			
-		</div>
-	</div>
-</header>
-
-<div class="cd-dropdown-wrapper">
-    <nav class="cd-dropdown">
-        <ul class="cd-dropdown-content">
-            <li class="cd-dropdown-header">
-                <a href="#" class="cd-dropdown-logo">
-                    <img src="https://www.procurandocraques.com/uploads/img/loja_logo/26/87adf0d289b2ebb0047d5b338e3b271b.png" alt="Jogador Brilhante">
-                </a>
-            </li>
-			<li><a href="#sobre">Sobre</a></li>
-			<li><a href="#carreira">Carreira</a></li>
-			<li><a href="#videos">Vídeos</a></li>
-			<li><a href="#estatisticas">Estatísticas</a></li>
-			<li><a href="#contato">Contato</a></li>
-        </ul>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo"><i class="fas fa-spa"></i> Perfumaria da Rita</a>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#cadastro">Cadastro</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a></li>
+            </ul>
+        </div>
     </nav>
-</div>
 
-<section class="busca" style="background-image: url('https://www.procurandocraques.com/app//assets/img/bg10.jpg');">
-    <span class="mascara"></span>
-    <div class="container"> 
-        <div>
-            <h2 class="titulo" data-aos="fade-up">Maicon Paulista</h2>
-            <h3 class="subtitulo" data-aos="fade-up">Lateral Esquerdo | 29 anos | Curitiba/PR</h3>
-            <div class="btn-container" data-aos="fade-up" data-aos-delay="400">
-                <a href="#videos" class="btn btn-primario"><i class="fas fa-play"></i> Ver Vídeos</a>
-                <a href="https://wa.me/5512997690407" class="btn btn-primario outline"><i class="fab fa-whatsapp"></i> Contato</a>
-            </div>
-        </div>
-    </div>
-</section>
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <h1>PERFUMARIA DA RITA</h1>
+        <p>Descubra a essência da elegância com nossos exclusivos perfumes franceses. Uma experiência olfativa que transcende o tempo.</p>
+        <a href="#produtos" class="btn btn-primary">Explorar Coleção</a>
+    </section>
 
-<div class="section-divider up">
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <path d="M0 100 C40 0 60 0 100 100 Z"></path>
-    </svg>
-</div>	
+    <!-- Products Section -->
+    <section id="produtos">
+        <h2 class="section-title">Nossos Produtos</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1592945403247-b9a38a7b8da7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Élégance Nocturne</h3>
+                    <p class="product-brand">Paris, França</p>
+                    <div class="product-actions">
+                        <button class="btn btn-outline">Detalhes</button>
+                        <button class="btn btn-primary add-to-cart">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1595425977377-6aaf05c446d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Fleur d'Été</h3>
+                    <p class="product-brand">Provence, França</p>
+                    <div class="product-actions">
+                        <button class="btn btn-outline">Detalhes</button>
+                        <button class="btn btn-primary add-to-cart">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1590732870482-9c36b0f1dab2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Lumière d'Opale</h3>
+                    <p class="product-brand">Côte d'Azur, França</p>
+                    <div class="product-actions">
+                        <button class="btn btn-outline">Detalhes</button>
+                        <button class="btn btn-primary add-to-cart">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1585386959984-a4155224a1ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Mystère Royal</h3>
+                    <p class="product-brand">Versailles, França</p>
+                    <div class="product-actions">
+                        <button class="btn btn-outline">Detalhes</button>
+                        <button class="btn btn-primary add-to-cart">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="secao home-sobre" id="sobre">
-    <div class="container">
-        <div class="grid-7 grid-m-12 grid-s-12 home-sobre-texto" data-aos="fade-up">
-            <h2 class="titulo">Sobre Maicon Paulista</h2>
-            <h3 class="texto"><p style="text-align: justify;">Maicon Paulista é um Lateral Esquerdo brasileiro de 29 anos, natural de Curitiba/PR, com vasta experiência no futebol brasileiro. Com um estilo de jogo versátil, Maicon se destaca por sua velocidade, habilidade técnica e faro de gol.</p>
-            <p style="text-align: justify;">Atualmente buscando oportunidades no exterior, Maicon já passou por diversos clubes do cenário nacional, acumulando experiência e demonstrando consistência em seu desempenho em campo.</p>
-            <p style="text-align: justify;">Com um físico atlético e mentalidade vencedora, Maicon Paulista é o tipo de jogador que faz a diferença em qualquer equipe, seja com seus gols, assistências ou simplesmente com sua presença em campo.</p></h3> 
-            <div class="btn-container">
-                <a href="#carreira" class="btn btn-primario">Ver Carreira</a>
+    <!-- Gallery Section -->
+    <section id="galeria">
+        <h2 class="section-title">Nossa Galeria</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1590732870482-9c36b0f1dab2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Perfume francês">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1595425977377-6aaf05c446d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Coleção de perfumes">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1592945403247-b9a38a7b8da7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Frasco de perfume">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Perfume exclusivo">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1595425898699-5d0d86e8b9e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Loja de perfumes">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1620916297394-9b1c6b5a1e3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Ingredientes naturais">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
             </div>
         </div>
-        <div class="grid-5 grid-m-12 grid-s-12 home-sobre-foto">       
-            <img src="https://www.procurandocraques.com/app/assets/img/player.png" alt="Maycon Paulista">
-        </div>
-    </div>
-</section>
+    </section>
 
-<section class="secao blocos-home" style="background-image: url('https://www.procurandocraques.com/app//assets/img/bg9.jpg');">
-    <span class="mascara"></span>
-    <div class="container">
-        <div class="carrosel carrosel-blocos">
-            <a href="#carreira" class="bloco-home"  data-aos="zoom-in">
-                <div class="bloco-home-icon"><i class="fas fa-trophy"></i></div>
-                <div class="bloco-home-titulo">Experiência</div>
-                <div class="bloco-home-texto">Mais de 10 anos de carreira no futebol brasileiro</div>
-            </a>
-            <a href="#videos" class="bloco-home"  data-aos="zoom-in">
-                <div class="bloco-home-icon"><i class="fas fa-video"></i></div>
-                <div class="bloco-home-titulo">Habilidades</div>
-                <div class="bloco-home-texto">Assista aos vídeos e confira o talento de Maycon</div>
-            </a>
-            <a href="#estatisticas" class="bloco-home"  data-aos="zoom-in">
-                <div class="bloco-home-icon"><i class="fas fa-chart-line"></i></div>
-                <div class="bloco-home-titulo">Estatísticas</div>
-                <div class="bloco-home-texto">Números que comprovam sua qualidade</div>
-            </a>
-            <a href="#contato" class="bloco-home"  data-aos="zoom-in">
-                <div class="bloco-home-icon"><i class="fas fa-phone-alt"></i></div>
-                <div class="bloco-home-titulo">Contato</div>
-                <div class="bloco-home-texto">Entre em contato com o empresário André Bonani</div>
-            </a>
-        </div>
-    </div>
-</section>	
-
-<section class="secao" id="carreira">
-    <div class="container">
-        <h2 class="titulo">Carreira</h2>
-        <div class="timeline">
-            <div class="timeline-item" data-aos="fade-up">
-                <div class="timeline-year">2010-2012</div>
-                <div class="timeline-content">
-                    <h3>Início de Carreira</h3>
-                    <p>Formação nas categorias de base de clubes paranaenses, com destaque no Campeonato Paranaense Juvenil.</p>
+    <!-- Registration Form -->
+    <section id="cadastro">
+        <h2 class="section-title">Cadastre-se</h2>
+        <div class="form-container">
+            <form id="registrationForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">Nome</label>
+                        <input type="text" id="firstName" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Sobrenome</label>
+                        <input type="text" id="lastName" class="form-control" required>
+                    </div>
                 </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up">
-                <div class="timeline-year">2013-2015</div>
-                <div class="timeline-content">
-                    <h3>Primeiro Contrato Profissional</h3>
-                    <p>Estreia no futebol profissional pelo Paraná Clube, participando do Campeonato Brasileiro da Série B.</p>
+                
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" class="form-control" required>
                 </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up">
-                <div class="timeline-year">2016-2018</div>
-                <div class="timeline-content">
-                    <h3>Consolidação</h3>
-                    <p>Passagem por clubes do interior de São Paulo, com destaque no Campeonato Paulista e Copa do Brasil.</p>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Telefone</label>
+                        <input type="tel" id="phone" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthdate">Data de Nascimento</label>
+                        <input type="date" id="birthdate" class="form-control" required>
+                    </div>
                 </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up">
-                <div class="timeline-year">2019-2021</div>
-                <div class="timeline-content">
-                    <h3>Experiência Nacional</h3>
-                    <p>Atuação em clubes do Nordeste brasileiro, acumulando experiência em diferentes estilos de jogo.</p>
+                
+                <div class="form-group">
+                    <label for="address">Endereço</label>
+                    <input type="text" id="address" class="form-control" required>
                 </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up">
-                <div class="timeline-year">2022-Presente</div>
-                <div class="timeline-content">
-                    <h3>Busca por Novos Desafios</h3>
-                    <p>Preparado para encarar o desafio do futebol internacional, com maturidade e bagagem técnica.</p>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">Cidade</label>
+                        <input type="text" id="city" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">Estado</label>
+                        <select id="state" class="form-control" required>
+                            <option value="">Selecione...</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="ES">Espírito Santo</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="zip">CEP</label>
+                        <input type="text" id="zip" class="form-control" required>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- SEÇÃO DE VÍDEOS CORRIGIDA -->
-<section class="secao" id="videos" style="background-color: #f5f5f5;">
-    <div class="container">
-        <h2 class="titulo">Vídeos</h2>
-        
-        <div class="grid-4 grid-m-6 grid-s-12 video-item" data-aos="fade-up">
-            <div class="video-wrapper">
-                <iframe width="100%" height="200" src="https://www.youtube.com/embed/PrKepAuxwJ8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h3>Melhores Momentos 2023</h3>
-            </div>
-        </div>
-        
-        <div class="grid-4 grid-m-6 grid-s-12 video-item" data-aos="fade-up">
-            <div class="video-wrapper">
-                <iframe width="100%" height="200" src="https://www.youtube.com/embed/cDUpyoisRYE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h3>Gols e Assistências</h3>
-            </div>
-        </div>
-        
-        <div class="grid-4 grid-m-6 grid-s-12 video-item" data-aos="fade-up">
-            <div class="video-wrapper">
-                <iframe width="100%" height="200" src="https://www.youtube.com/embed/tgTc22rQUoc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h3>Treinamentos</h3>
-            </div>
-        </div>
-        
-        <div class="clearfix"></div>
-        
-        <div class="btn-container" style="margin-top: 30px;">
-            <a href="https://www.youtube.com" target="_blank" class="btn btn-primario"><i class="fab fa-youtube"></i> Ver Mais Vídeos</a>
-        </div>
-    </div>
-</section>
-
-<section class="secao" id="estatisticas">
-    <div class="container">
-        <h2 class="titulo">Estatísticas</h2>
-        <div class="stats-container">
-            <div class="grid-3 grid-m-6 grid-s-12 stat-item" data-aos="fade-up">
-                <div class="stat-number">150+</div>
-                <div class="stat-label">Jogos Profissionais</div>
-            </div>
-            <div class="grid-3 grid-m-6 grid-s-12 stat-item" data-aos="fade-up">
-                <div class="stat-number">45</div>
-                <div class="stat-label">Gols Marcados</div>
-            </div>
-            <div class="grid-3 grid-m-6 grid-s-12 stat-item" data-aos="fade-up">
-                <div class="stat-number">28</div>
-                <div class="stat-label">Assistências</div>
-            </div>
-            <div class="grid-3 grid-m-6 grid-s-12 stat-item" data-aos="fade-up">
-                <div class="stat-number">5</div>
-                <div class="stat-label">Clubes Diferenciados</div>
-            </div>
-        </div>
-        <div class="stats-chart" data-aos="fade-up">
-            <h3>Desempenho por Temporada</h3>
-            <img src="https://via.placeholder.com/800x400?text=Gráfico+de+Desempenho" alt="Gráfico de Desempenho" style="width: 100%; max-width: 800px; margin: 0 auto; display: block;">
-        </div>
-    </div>
-</section>
-
-<section class="secao" id="contato" style="background-color: #0A357D; color: #fff;">
-    <div class="container">
-        <h2 class="titulo" style="color: #fff;">Contato</h2>
-        <div class="grid-6 grid-m-12 contact-info" data-aos="fade-up">
-            <h3>André Bonani</h3>
-            <p><i class="fas fa-briefcase"></i> Empresário</p>
-            <p><i class="fab fa-whatsapp"></i> (12) 99769-0407</p>
-            <p><i class="fas fa-envelope"></i> contato@maiconpaulista.com</p>
-            <div class="btn-container" style="margin-top: 20px;">
-                <a href="https://wa.me/5512997690407" class="btn btn-primario"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                <a href="mailto:contato@mayconpaulista.com" class="btn btn-primario outline"><i class="fas fa-envelope"></i> E-mail</a>
-            </div>
-        </div>
-        <div class="grid-6 grid-m-12 contact-form" data-aos="fade-up">
-            <form id="form-contato" class="form-validation">
-                <div class="campo-container">
-                    <input type="text" name="nome" class="campo" placeholder="Seu Nome" required>
+                
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" class="form-control" required>
                 </div>
-                <div class="campo-container">
-                    <input type="email" name="email" class="campo" placeholder="Seu E-mail" required>
+                
+                <div class="form-group">
+                    <label for="confirmPassword">Confirme sua Senha</label>
+                    <input type="password" id="confirmPassword" class="form-control" required>
                 </div>
-                <div class="campo-container">
-                    <input type="tel" name="telefone" class="campo" placeholder="Seu Telefone">
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" required> Aceito os termos e condições
+                    </label>
                 </div>
-                <div class="campo-container">
-                    <textarea name="mensagem" class="campo" placeholder="Sua Mensagem" rows="4" required></textarea>
-                </div>
-                <div class="btn-container">
-                    <button type="submit" class="btn btn-primario">Enviar Mensagem</button>
-                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px;">Cadastrar</button>
             </form>
         </div>
-    </div>
-</section>
-	
-</div>
+    </section>
 
-<footer class="footer">
-	<div class="container">
-		<div class="footer-frase">
-		<i class="fas fa-quote-left"></i> "O sucesso nasce do querer, da determinação e persistência em se chegar a um objetivo." <i class="fas fa-quote-right"></i>
-		</div>
-
-		<div class="footer-bloco footer-inst">
-			<h2>Menu</h2>
-			<ul class="footer-lista">
-				<li><a href="#sobre">Sobre</a></li>
-				<li><a href="#carreira">Carreira</a></li>	
-				<li><a href="#videos">Vídeos</a></li>	
-				<li><a href="#estatisticas">Estatísticas</a></li>	
-				<li><a href="#contato">Contato</a></li>		
-			</ul>
-		</div>
-
-		<div class="footer-bloco footer-duvidas">
-			<h2>Redes Sociais</h2>
-			<ul class="footer-lista">
-				<li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-				<li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
-				<li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>	
-			</ul>
-		</div>
-
-		<div class="footer-bloco footer-modalidades">
-			<h2>Contato</h2>
-			<ul class="footer-lista">
-				<li><i class="fab fa-whatsapp"></i> (12) 99769-0407</li>
-				<li><i class="fas fa-envelope"></i> contato@maiconpaulista.com</li>
-				<li><i class="fas fa-map-marker-alt"></i> Curitiba/PR - Brasil</li>
-			</ul>
-		</div>
-
-		<div class="footer-bloco footer-newsletter">
-			<h2>Fique Atualizado</h2>
-			<form id="form-newsletter" class="form-validation">
-				<p class="texto">Receba novidades sobre a carreira de Maycon Paulista</p>
-				<div class="campo-container">
-					<input type="email" name="email" class="campo" placeholder="Digite seu e-mail" required>
-				</div>
-				<button type="submit" class="btn btn-secundario">Assinar</button>
-			</form>
-		</div>
-	</div>
-
-	<div class="barra-footer">
-		<div class="container">
-			<div class="grid-12 center">TVVALENAREDE WhatsApp 12-99769-0407 &copy; 2023 - Todos os direitos reservados</div>
-		</div>
-	</div>
-</footer>
-
-<div class="gotop"></div>
-
-<div class="loading">
-    <div class="loading-wrap">
-        <div class="loader">Aguarde..</div>
-    </div>
-</div>
-
-<div class="modal" id="modal-alert">
-    <div class="modal-wrap modal-sm">
-        <span class="modal-btn-close modal-close" data-modal="modal-alert"></span>
-        <div class="modal-header">
-            <span class="modal-titulo" id="alert-titulo"></span>          
-        </div>
-        <div class="modal-body">
-            <div class="modal-alert-icon">
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <i class="fas fa-times-circle"></i>
+    <!-- Contact Section -->
+    <section id="contato">
+        <h2 class="section-title">Contato</h2>
+        <div class="contact-info">
+            <div class="contact-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Endereço</h3>
+                <p>Rua Chiquinha de Mattos, 92<br>Centro, Taubaté - SP<br>CEP: 12020-010</p>
             </div>
-            <p class="texto" id="alert-texto"></p>
-            <div class="modal-btn center">	
-                <button type="button" class="btn modal-close" data-modal="modal-alert">Fechar</button>
-            </div>  
+            <div class="contact-card">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Telefone</h3>
+                <p>(12) 99257-3744</p>
+                <a href="https://wa.me/5512992573744" class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-clock"></i>
+                <h3>Horário de Funcionamento</h3>
+                <p>Segunda a Sexta: 9h às 18h<br>Sábado: 9h às 14h<br>Domingo: Fechado</p>
+            </div>
         </div>
-    </div>
-</div>
+    </section>
 
-<script src="https://www.procurandocraques.com/app/assets/js/script.min.js"></script>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Perfumaria da Rita</h3>
+                <p>Especializada em perfumes franceses de alta qualidade, trazendo elegância e sofisticação para o seu dia a dia.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Links Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#cadastro">Cadastro</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p>Inscreva-se para receber nossas novidades e promoções exclusivas.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Seu e-mail" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Inscrever-se</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Perfumaria da Rita. Todos os direitos reservados para a TVVALENAREDE.
+        </div>
+    </footer>
 
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                navLinks.classList.remove('active');
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Cart Functionality
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+        const cartCount = document.querySelector('.cart-count');
+        let count = 0;
+        
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                count++;
+                cartCount.textContent = count;
+                
+                // Animation effect
+                button.textContent = 'Adicionado!';
+                button.style.backgroundColor = '#4CAF50';
+                
+                setTimeout(() => {
+                    button.textContent = 'Comprar';
+                    button.style.backgroundColor = '';
+                }, 2000);
+            });
+        });
+        
+        // Form Submission
+        const registrationForm = document.getElementById('registrationForm');
+        
+        registrationForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Cadastro realizado com sucesso! Em breve você receberá novidades exclusivas.');
+            registrationForm.reset();
+        });
+        
+        // Gallery Lightbox Effect
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const imgSrc = item.querySelector('img').src;
+                const lightbox = document.createElement('div');
+                lightbox.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0,0,0,0.9);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 2000;
+                    cursor: pointer;
+                `;
+                
+                const img = document.createElement('img');
+                img.src = imgSrc;
+                img.style.maxWidth = '90%';
+                img.style.maxHeight = '90%';
+                img.style.borderRadius = '10px';
+                
+                lightbox.appendChild(img);
+                document.body.appendChild(lightbox);
+                
+                lightbox.addEventListener('click', () => {
+                    document.body.removeChild(lightbox);
+                });
+            });
+        });
+        
+        // Sticky Navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.style.padding = '10px 0';
+                nav.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            } else {
+                nav.style.padding = '';
+                nav.style.boxShadow = '';
+            }
+        });
+    </script>
 </body>
 </html>
