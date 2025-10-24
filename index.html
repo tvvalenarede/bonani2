@@ -26,6 +26,7 @@
             background-color: var(--light);
             color: var(--dark);
             line-height: 1.6;
+            overflow-x: hidden;
         }
         
         .container {
@@ -122,12 +123,13 @@
         
         /* Header */
         header {
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.95);
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
+            backdrop-filter: blur(5px);
         }
         
         .header-container {
@@ -175,7 +177,7 @@
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(26, 54, 93, 0.8), rgba(26, 54, 93, 0.9)), url('OLIMUSAR.JPG') center/cover no-repeat;
+            background: linear-gradient(rgba(26, 54, 93, 0.8), rgba(26, 54, 93, 0.9)), url('https://raw.githubusercontent.com/tvvalenarede/bonani2/main/OLIMUSAR.jpg') center/cover no-repeat;
             color: white;
             text-align: center;
             padding: 180px 0 100px;
@@ -216,6 +218,11 @@
             width: 100%;
             height: auto;
             display: block;
+            transition: transform 0.5s ease;
+        }
+        
+        .sobre-img img:hover {
+            transform: scale(1.03);
         }
         
         .sobre-content {
@@ -503,7 +510,7 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
-            <h1> Delegado Olim no Vale do Paraíba</h1>
+            <h1>Delegado Olim no Vale do Paraíba</h1>
             <p>Conteúdo exclusivo e estratégias de marketing para potencializar sua presença online e alcançar resultados extraordinários.</p>
             <a href="#videos" class="btn">Ver Vídeos</a>
         </div>
@@ -515,8 +522,7 @@
             <h2>Sobre o Dr. Olim</h2>
             <div class="sobre-container">
                 <div class="sobre-img">
-                    <!-- Foto do Dr. Olim -->
-                    <img src="OLIMUSAR.JPG" alt="Dr. Olim">
+                    <img src="https://raw.githubusercontent.com/tvvalenarede/bonani2/main/OLIMUSAR.jpg" alt="Dr. Olim">
                 </div>
                 <div class="sobre-content">
                     <h3>Biografia</h3>
@@ -599,8 +605,6 @@
                         <p>Explicação sobre as recentes alterações na legislação brasileira.</p>
                     </div>
                 </div>
-                
-                <!-- Adicione mais vídeos conforme necessário -->
             </div>
         </div>
     </section>
@@ -698,7 +702,7 @@
             </div>
             
             <div class="copyright">
-                <p>&copy; 2025 Delegado Olim - Todos os direitos reservado da mídia  TVVALENAREDE </p>
+                <p>&copy; 2025 Delegado Olim - Todos os direitos reservado da mídia TVVALENAREDE</p>
             </div>
         </div>
     </footer>
@@ -718,9 +722,9 @@
                 star.style.width = `${size}px`;
                 star.style.height = `${size}px`;
                 
-                // Posição aleatória
+                // Posição aleatória apenas na parte superior (até 50% da tela)
                 star.style.left = `${Math.random() * 100}%`;
-                star.style.top = `${Math.random() * 50}%`; // Limitado à parte superior
+                star.style.top = `${Math.random() * 50}%`;
                 
                 // Duração da animação aleatória
                 const duration = Math.random() * 3 + 2;
