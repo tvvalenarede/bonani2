@@ -450,6 +450,63 @@
             color: #a0aec0;
         }
         
+        /* Botões Flutuantes */
+        .floating-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .floating-button {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            position: relative;
+        }
+        
+        .floating-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        
+        .floating-button.whatsapp {
+            background-color: #25D366;
+        }
+        
+        .floating-button.instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+        
+        .floating-button .tooltip {
+            position: absolute;
+            right: 70px;
+            background-color: var(--primary);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        }
+        
+        .floating-button:hover .tooltip {
+            opacity: 1;
+        }
+        
         /* Responsividade */
         @media (max-width: 992px) {
             .sobre-container, .contato-container {
@@ -506,6 +563,17 @@
             h2 {
                 font-size: 1.7rem;
             }
+            
+            .floating-buttons {
+                bottom: 15px;
+                right: 15px;
+            }
+            
+            .floating-button {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
         }
         
         /* Melhorias específicas para a imagem do herói */
@@ -519,6 +587,18 @@
 <body>
     <!-- Efeito de Estrelas -->
     <div id="stars-container"></div>
+    
+    <!-- Botões Flutuantes -->
+    <div class="floating-buttons">
+        <a href="https://www.instagram.com/delegado_olim/" class="floating-button instagram" target="_blank">
+            <span>📷</span>
+            <div class="tooltip">Siga-nos no Instagram</div>
+        </a>
+        <a href="https://wa.me/5511983707093" class="floating-button whatsapp" target="_blank">
+            <span>💬</span>
+            <div class="tooltip">Fale conosco no WhatsApp</div>
+        </a>
+    </div>
     
     <!-- Header -->
     <header>
@@ -675,10 +755,6 @@
                         <p>O prefeito de Cunha, Rodrigo do Neto, esteve no pré Lançamento do livro PREVENÇÃO EM AÇÃO, no Restaurante Caminho de Ouro em Cunha.</p>
                     </div>
                 </div>
-                
-              
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -754,7 +830,7 @@
                     <p>Especialista em segurança pública e direito, compartilhando conhecimento e orientações através de plataformas digitais.</p>
                     <div class="social-links">
                         <a href="#" title="Facebook">f</a>
-                        <a href="#" title="Instagram">ig</a>
+                        <a href="https://www.instagram.com/delegado_olim/" title="Instagram" target="_blank">ig</a>
                         <a href="#" title="YouTube">YT</a>
                     </div>
                 </div>
@@ -853,4 +929,3 @@
     </script>
 </body>
 </html>
-
