@@ -1,8 +1,3 @@
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -25,6 +20,7 @@
             --light: #f7fafc;
             --dark: #2d3748;
             --gray: #718096;
+            --facebook-blue: #1877f2;
         }
         
         body {
@@ -94,6 +90,45 @@
             background-color: #c53030;
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Botão Facebook Centralizado */
+        .facebook-center-button {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+            text-align: center;
+        }
+        
+        .facebook-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--facebook-blue);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            box-shadow: 0 10px 25px rgba(24, 119, 242, 0.4);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            min-width: 280px;
+        }
+        
+        .facebook-btn:hover {
+            background-color: #0d65d9;
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(24, 119, 242, 0.6);
+        }
+        
+        .facebook-btn i {
+            font-size: 1.4rem;
+            margin-right: 12px;
         }
         
         /* Efeito de Estrelas */
@@ -579,6 +614,18 @@
                 height: 50px;
                 font-size: 20px;
             }
+            
+            /* Ajuste do botão central no mobile */
+            .facebook-center-button {
+                width: 90%;
+                max-width: 300px;
+            }
+            
+            .facebook-btn {
+                padding: 14px 24px;
+                font-size: 1.1rem;
+                min-width: 250px;
+            }
         }
         
         /* Melhorias específicas para a imagem do herói */
@@ -592,6 +639,13 @@
 <body>
     <!-- Efeito de Estrelas -->
     <div id="stars-container"></div>
+    
+    <!-- Botão Facebook Centralizado -->
+    <div class="facebook-center-button">
+        <a href="https://www.facebook.com/TVRBRAZIL" target="_blank" class="facebook-btn">
+            <i>f</i> Facebook AO VIVO
+        </a>
+    </div>
     
     <!-- Botões Flutuantes -->
     <div class="floating-buttons">
@@ -640,7 +694,7 @@
                 </div>
                 <div class="sobre-content">
                     <h3>Eventos</h3>
-                    <p>O Dr. Olim é um especialista renomado em segurança pública e direito, com anos de experiência atuando como delegado estará fazendo uma conferência A perturbação do sossego sonoro é uma infração prevista em lei e ocorre quando o excesso de barulho compromete a tranquilidade da coletividade.
+                    <p>O Dr. Olim é um especialista renomado em segurança pública e direito, com anos de experiência atuando como delegado estará fazendo uma conferencia A perturbação do sossego sonoro é uma infração prevista em lei e ocorre quando o excesso de barulho compromete a tranquilidade da coletividade.
 A legislação protege o direito de todos ao descanso, à paz e ao bem-estar, independentemente do horário.
 Não se trata apenas de volume alto, mas do impacto que o som causa nas pessoas ao redor.
 As autoridades policiais têm o dever de agir diante das denúncias para garantir o cumprimento da lei.
@@ -651,7 +705,7 @@ Respeitar o limite do som é respeitar o próximo e a convivência em sociedade.
                 </div>
             </div>
         </div>
-    </section></section>
+    </section>
 
     <!-- Sobre Section -->
     <section class="sobre" id="sobre">
@@ -683,7 +737,7 @@ Respeitar o limite do som é respeitar o próximo e a convivência em sociedade.
                         <iframe src="https://www.youtube.com/embed/Ib9O_QPSjHI" title="Vídeo 1" allowfullscreen></iframe>
                     </div>
                     <div class="video-info">
-                        <h3>DR.OLIM DEPUTADO E DELEGADO EM CUNHA S.P </h3>
+                        <h3>DR.OLIM DEPUTADO E DELEGADO EM CUNHA S.P</h3>
                         <p>No lançamento do livro "PREVENÇAO EM AÇÃO"e destinou Um Milhão de reais para o Prefeito Rodrigo do Neto para investimento na cidade.</p>
                     </div>
                 </div>
@@ -757,7 +811,7 @@ Respeitar o limite do som é respeitar o próximo e a convivência em sociedade.
                         <iframe src="https://www.youtube.com/embed/KICGQ_mWKQ0?start=8" title="Vídeo 1" allowfullscreen></iframe>
                     </div>
                     <div class="video-info">
-                        <h3>PREFEITO DE JAMBEIRO ARIES MARIOTO. </h3>
+                        <h3>PREFEITO DE JAMBEIRO ARIES MARIOTO.</h3>
                         <p>O prefeito de Jambeiro esteve na ALESP, em São Paulo, no evento PREVENÇÃO EM AÇÃO, e falou da importancia deste projeto do Deputado e Delegado Dr.Olim.</p>
                     </div>
                 </div>
@@ -769,7 +823,7 @@ Respeitar o limite do som é respeitar o próximo e a convivência em sociedade.
                     </div>
                     <div class="video-info">
                         <h3>GLAUCIO DE OLIVEIRA TENENTE-CORONEL.</h3>
-                        <p>O Tenente-Coronel do Corpo de Bombeiros do Vale do Paraíba esteve no evento na ALESP, em São Paulo, e falou da importância do projeto PREVENÇÃO EM AÇÃO, do Deputado e Delegado Dr.Olim .</p>
+                        <p>O Tenente-Coronel do Corpo de Bombeiros do Vale do Paraíba esteve no evento na ALESP, em São Paulo, e falou da importância do projeto PREVENÇÃO EM AÇÃO, do Deputado e Delegado Dr.Olim.</p>
                     </div>
                 </div>
                 
@@ -819,114 +873,61 @@ Respeitar o limite do som é respeitar o próximo e a convivência em sociedade.
                         </div>
                     </div>
                 </div>
-               
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário TVVALENAREDE</title>
+                
+                <div class="contato-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone/WhatsApp</label>
+                            <input type="tel" id="telefone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f2f2f2;
-            padding: 30px;
-        }
-        form {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            max-width: 500px;
-            margin: auto;
-            box-shadow: 0 0 10px #ccc;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 10px;
-            border: 1px solid #aaa;
-            border-radius: 5px;
-        }
-        button {
-            background: #007bff;
-            color: white;
-            padding: 12px;
-            margin-top: 15px;
-            border: none;
-            border-radius: 5px;
-            width: 100%;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #0056b3;
-        }
-        .success, .error {
-            margin-top: 20px;
-            padding: 15px;
-            border-radius: 5px;
-            display: none;
-        }
-        .success {
-            background: #c8ffc8;
-            color: #006600;
-        }
-        .error {
-            background: #ffc8c8;
-            color: #660000;
-        }
-    </style>
-</head>
-
-<body>
-
-<form id="contact-form">
-    <h2>Enviar Mensagem</h2>
-
-    <!-- Web3Forms Required -->
-    <input type="hidden" name="access_key" value="60460a16-e367-417f-9f2d-c79c400867c0">
-
-    <label>Seu Nome:</label>
-    <input type="text" name="name" required>
-
-    <label>Seu E-mail:</label>
-    <input type="email" name="email" required>
-
-    <label>Mensagem:</label>
-    <textarea name="message" rows="5" required></textarea>
-
-    <button type="submit">Enviar</button>
-
-    <div class="success">Mensagem enviada com sucesso!</div>
-    <div class="error">Ocorreu um erro ao enviar.</div>
-</form>
-
-<script>
-document.getElementById("contact-form").addEventListener("submit", async function(e){
-    e.preventDefault();
-
-    const form = e.target;
-    const data = new FormData(form);
-
-    const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: data
-    });
-
-    if(response.ok){
-        form.querySelector(".success").style.display = "block";
-        form.querySelector(".error").style.display = "none";
-        form.reset();
-    } else {
-        form.querySelector(".success").style.display = "none";
-        form.querySelector(".error").style.display = "block";
-    }
-});
-</script>
-
-</body>
-</html>
-
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Delegado Olim</h3>
+                    <p>Especialista em segurança pública e direito, atuando como delegado e promovendo a prevenção em ação no Vale do Paraíba e região.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/TVRBRAZIL" target="_blank">f</a>
+                        <a href="https://www.instagram.com/delegado_olim/" target="_blank">📷</a>
+                        <a href="https://wa.me/5511983707093" target="_blank">💬</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <a href="#home">Início</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#videos">Vídeos</a>
+                    <a href="#contato">Contato</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <p>Dra. Eliane: (11) 98370-7096</p>
+                    <p>delegadoolimnovale@gmail.com</p>
+                    <p>Vale do Paraíba - SP</p>
+                </div>
+            </div>
             
             <div class="copyright">
                 <p>&copy; 2025 Delegado Olim - Todos os direitos reservado da mídia TVVALENAREDE</p>
@@ -1006,6 +1007,3 @@ document.getElementById("contact-form").addEventListener("submit", async functio
     </script>
 </body>
 </html>
-
-
-
